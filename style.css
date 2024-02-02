@@ -1,0 +1,129 @@
+#about_me * {
+  color: #7a7a7a !important;
+}
+.contact-section {
+  background-color: #2b2b2b !important;
+}
+.download-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+}
+#contactForm button.submit {
+  border-radius: 8px;
+  width: 16%;
+}
+.button:hover {
+  background-color: orange; /* Change the color on hover */
+}
+
+.skills li em {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+#contactForm input[type="text"],
+#contactForm textarea {
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+  color: rgb(0, 0, 0);
+  background-color: rgb(184, 189, 193);
+}
+
+#contactForm button.submit {
+  display: block;
+  margin-left: 50%; /* Ajusté à 50% pour centrer le bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none;
+  cursor: pointer;
+}
+
+#contactForm button.submit:hover {
+  background-color: darkorange; /* Couleur de fond au survol */
+}
+
+#contactForm label {
+  margin-bottom: 10px; /* Ajout de marge en bas */
+}
+.required {
+  color: darkorange;
+}
+
+#contactForm h1 {
+  margin-bottom: 20px; /* Ajout de marge en bas */
+  display: inline; /* Ajout de cette propriété pour afficher le titre "Contact" en ligne sans nouvelle ligne */
+}
+
+#contactForm i.fa {
+  display: none; /* Ajout de cette propriété pour masquer l'icône */
+}
+
+.contact-header {
+  margin-left: -5%;
+  margin-bottom: 5%;
+  color: rgb(255, 255, 255);
+}
+
+/* Add this to your style.css */
+.download-button a.button {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out; /* Pulse effect */
+}
+
+.download-button a.button:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm textarea:focus {
+  border-color: darkorange; /* Border color on focus */
+}
+
+/* Add this to your style.css */
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Add this to your style.css */
+.social a {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Smooth bounce effect */
+}
+
+.social a:hover {
+  transform: translateY(-5px); /* Bounce effect on hover */
+}
+
+/* Animation pour les sections */
+section,
+header {
+  opacity: 0; /* Initialement, les sections sont invisibles */
+  transform: translateX(-80%); /* Les sections sont décalées vers la gauche */
+
+  animation: slideInRight 1s ease-in-out forwards; /* Animation slideInRight pour chaque section */
+}
+
+/* Définition de l'animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
